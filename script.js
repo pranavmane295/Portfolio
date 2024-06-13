@@ -1,11 +1,55 @@
-// Function to display error message
-function showError(errorMessage) {
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: errorMessage
+$(document).ready(function () {
+    // Form submission event listener
+    $('form').submit(function (event) {
+        event.preventDefault();
+        sendMail();
     });
+});
+
+function sendMail() {
+    var fromName = document.getElementById("fromName").value;
+    var emailSender = document.getElementById("emailSender").value;
+    var subjectSender = document.getElementById("subjectSender").value;
+    var message = document.getElementById("message").value;
+	 if (!fromName.trim() || !emailSender.trim() || !subjectSender.trim() || !message.trim()) {
+        // showError("All fields are required.");
+        return;
+    }
+
+    // Proceed to send mail
+    emailjs.send("service_cuxogkb", "template_jxyrbhs", {
+        from_name: fromName,
+        email_sender: emailSender,
+        subject: subjectSender,
+        message: message
+    })
+    .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        // Display success message
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Your message has been sent successfully.'
+        });
+    })
+    .catch(function (error) {
+        console.log('FAILED...', error);
+        // Display error message
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Something went wrong! Please try again later.'
+        });
+    });
+
+    // Clear input fields after sending mail
+    $('form')[0].reset();
 }
+
+
+
+
+
 $(document).ready(function () {
   $(window).scroll(function () {
       if (this.scrollY > 20) {
