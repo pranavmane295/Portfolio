@@ -373,7 +373,7 @@ section .title::after{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin: 20px 80px 0 80px;
+    margin: 20px 5% 0 5%;
 }
 
 .project_btn a {
@@ -838,6 +838,12 @@ footer i:hover {
     .services .serv-content .card, .skills .skills-content .column,.contact .contact-content .column{
         width: 100%;
     }
+    .project_btn{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+        }
 }
 @media (max-width: 500px) {
     .home .home-content .text-2 {
@@ -845,6 +851,29 @@ footer i:hover {
     }
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+    .paragraph-2{
+        font-size: 27px;
+    }
+    .project_btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    }
+    .project_btn a {
+        background: none;
+        color: #23b410;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 3px 10px;
+        border-radius: 6px;
+        border: 2px solid #23b410;
+        transition: all 0.3s ease;
+     
+    }
+    .text{
+        min-height: 100px;
     }
 }
 
