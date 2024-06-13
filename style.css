@@ -295,7 +295,10 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    min-height: 80px;
  }
+
+
  .about .about-content .right .text span{
      color: #23b410;
  }
@@ -322,7 +325,7 @@ section .title::after{
      color: white;
      background:green;
  }
- 
+
  /* services styling */
  .services{
      color: white;
