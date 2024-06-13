@@ -371,9 +371,9 @@ section .title::after{
 
  .project_btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
-    margin: 20px 5% 0 5%;
+    margin: 0px 5% 0 5%;
 }
 
 .project_btn a {
@@ -385,7 +385,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #23b410;
     transition: all 0.3s ease;
- 
+    margin-top: 40px;
 }
 
 .project_btn a:hover {
@@ -857,6 +857,7 @@ footer i:hover {
     }
     .project_btn{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
     
@@ -870,12 +871,26 @@ footer i:hover {
         border-radius: 6px;
         border: 2px solid #23b410;
         transition: all 0.3s ease;
+        margin-bottom: 10%;
      
     }
     .text{
         min-height: 100px;
     }
+    section .title::after {
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        font-size: 18px;
+        color: #23b410;
+        padding: 5px;
+        background: rgba(0, 0, 0, 0);
+        transform: translateX(-50%);
+        border-radius: 5px;
+        padding: 0 20px 0 20px;
+        margin-bottom: -20px;
+       width: 150px;
 }
-
+}
 
 
