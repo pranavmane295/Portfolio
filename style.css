@@ -259,6 +259,7 @@ body {
 }
 
 .timeline-card .date-badge {
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
     background: #23b410;
     color: #fff;
