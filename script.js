@@ -46,7 +46,16 @@ function sendMail() {
     $('form')[0].reset();
 }
 
-
+// Function to show success message on resume download 
+function showSuccess() {
+    const msg = document.getElementById('download-msg');
+    msg.style.display = 'inline'; // Show the message
+    
+    // Optional: Hide it again after 3 seconds
+    setTimeout(() => {
+        msg.style.display = 'none';
+    }, 3000);
+}
 
 
 

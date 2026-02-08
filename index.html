@@ -58,6 +58,7 @@
           <li><a href="#services" class="menu-btn">Projects</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
+          <li><a href="Resume.pdf"  download="Pranav_Resume" class="menu-btn" onclick="showSuccess()" style="color: #23b410;">Download Resume</a></li>
         </ul>
         <div class="menu-btn">
           <i class="material-icons">menu</i>
@@ -101,6 +102,7 @@
     </div>
   </section>
 
+  <!-- Experience Section -->
   <section class="experience" id="experience">
     <div class="max-width">
         <h2 class="title">My Experience</h2>
@@ -183,32 +185,45 @@
 
   <!-- skills section services -->
   <section class="skills" id="skills">
-    <div class="max-width" data-aos="fade-down">
-      <h2 class="title" data-aos="fade-up">My Skills</h2>
-      <div class="skills-content">
-        <div class="column left">
-          <div class="text">
-            My creative skills & experiences.
-          </div>
-          <p class="paragraph-2">
-            I possess a diverse skill set spanning HTML, CSS, JavaScript (ES6+), React.js, Flutter, Node.js, Express.js, and C++. With a solid foundation in frontend and backend development, along with experience in building cross-platform mobile applications, I bring a versatile and dynamic approach to software engineering. My proficiency extends to version control with Git and crafting RESTful APIs, ensuring robust and scalable solutions for a wide range of projects.
-          </p>
-          <a href="#about">Read More</a>
+    <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-intro" data-aos="fade-right">
+                <div class="text">Technical Toolbox</div>
+                <p>I specialize in building scalable SaaS solutions and maintaining high-quality engineering standards. My expertise spans the full development lifecycle, from system design to automated testing.</p>
+                <a href="Resume.pdf" download="Pranav_Resume" class="btn-project-style" onclick="showSuccess()">
+                  Download Resume
+                </a>
+                <span id="download-msg" style="display:none; color: #23b410; margin-left: 15px; font-size: 14px; font-weight: bold;">
+                    ✔ Download Started!
+                </span>
+            </div>
+
+            <div class="bento-grid">
+                <div class="skill-card" data-aos="zoom-in" id="bento-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Java, Python, JavaScript, C++, DSA, OOPs, Debugging</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100" id="bento-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud & SaaS</h3>
+                    <p>Dynamics 365, Salesforce, Azure DevOps, Azure Basics</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200" id="bento-item">
+                    <i class="fas fa-vial"></i>
+                    <h3>QA & Testing</h3>
+                    <p>Selenium, Postman, Automation, Functional & Regression Testing</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300" id="bento-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Data & Tools</h3>
+                    <p>PostgreSQL, MongoDB, SQL, Git, Jira, ALM, Rally</p>
+                </div>
+            </div>
         </div>
-        <div class="column right skill-box">
-          <div class="icons">
-            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
-          </div>
-          <div class="icons">
-            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
-            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
-      </div>
-  </section>
+    </div>
+</section>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">

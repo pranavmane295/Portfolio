@@ -335,6 +335,206 @@ body {
         font-size: 22px;
     }
 }
+
+/* --- Modern Glass Bento Skills Styling --- */
+.skills {
+    background: #000;
+    padding: 100px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Intro on left, Grid on right */
+    gap: 40px;
+    align-items: center;
+}
+
+/* Intro Text Styling */
+.skill-intro .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.skill-intro p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.skill-btn {
+    display: inline-block;
+    background: #23b410;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* Bento Grid Styling */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.bento-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-item i {
+    font-size: 30px;
+    color: #23b410;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.bento-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bento-item p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+/* Hover Effects */
+.bento-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #23b410;
+    transform: translateY(-10px);
+}
+
+/* Special styling for the main professional skill */
+.bento-item.highlight {
+    background: linear-gradient(145deg, rgba(35, 180, 16, 0.1), rgba(0, 0, 0, 0));
+    border-bottom: 3px solid #23b410;
+}
+
+/* Responsive Tablet/Mobile */
+@media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* --- Project-Style Skills Section --- */
+.skills {
+    background: #111;
+    padding: 100px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Button Styled like Project Links */
+.btn-project-style {
+    display: inline-block;
+    background-color: transparent;
+    color: #23b410;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #23b410;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-project-style:hover {
+    color: #ffffff;
+    border: 2px solid #23b410;
+    background-color: green;
+}
+
+/* Tiles Styled like Project Cards */
+.skill-card {
+    background: #222; /* Solid background like project cards */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    border: 1px solid #333;
+    /* Project-style shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* The "Zoom Effect" from Projects */
+.skill-card:hover {
+    transform: scale(1.05); /* Standard project zoom */
+    box-shadow: 0 10px 25px rgba(35, 180, 16, 0.2); /* Glow shadow on hover */
+    border-color: #23b410;
+}
+
+.skill-card i {
+    font-size: 35px;
+    color: #23b410;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover i {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skill-card p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .bento-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+    .bento-grid { grid-template-columns: 1fr; }
+}
+
+#bento-item {
+    background: linear-gradient(145deg, rgba(35, 180, 16, 0.1), rgba(0, 0, 0, 0));
+    border-bottom: 3px solid #23b410;
+}
+
 /* all similar styling */
 section {
     padding: 60px 0; /* Reduced top and bottom padding */
@@ -878,7 +1078,7 @@ footer i:hover {
         padding: 0 50px;
     }
 }
-@media (max-width: 947px) {
+@media (max-width: 1220px) {
     
     .max-width{
         padding: 0 50px;
