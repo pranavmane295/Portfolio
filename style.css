@@ -213,7 +213,127 @@ body {
     color: #25e70c;
     font-weight: 500;
 }
+/* --- CENTERED WIDE EXPERIENCE STYLING --- */
 
+.experience {
+    background: linear-gradient(90deg, #180808, #1b1b1b);
+    background-size: 2000px;
+    color: white;
+}
+
+.experience .title::after {
+    content: "Professional Journey";
+}
+
+/* Centering Wrapper */
+.experience-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Wide Card Design */
+.timeline-card.wide-card {
+    width: 100%;
+    max-width: 1000px; /* Adjust this to control how "wide" it looks */
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #333;
+    border-left: 5px solid #23b410; /* Changed accent to the left for a timeline feel */
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.timeline-card.wide-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 40px rgba(35, 180, 16, 0.15);
+}
+
+/* Header Styling */
+.timeline-card .head {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.timeline-card .date-badge {
+    display: inline-block;
+    background: #23b410;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.timeline-card h3 {
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+.timeline-card h4 {
+    font-size: 20px;
+    color: #23b410;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 5px;
+}
+
+/* Body and Grid Layout */
+.timeline-card .body .summary {
+    font-size: 17px;
+    color: #bbb;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits bullets into two columns */
+    gap: 20px;
+}
+
+.timeline-card .body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-card .body ul li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+/* Custom Checkmark/Bullet */
+.timeline-card .body ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #23b410;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 947px) {
+    .details-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    
+    .timeline-card.wide-card {
+        padding: 25px;
+    }
+
+    .timeline-card h3 {
+        font-size: 22px;
+    }
+}
 /* all similar styling */
 section {
     padding: 60px 0; /* Reduced top and bottom padding */
