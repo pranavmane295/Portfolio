@@ -1092,8 +1092,9 @@ footer i:hover {
     }
     .menu-btn i.active::before {
         visibility: visible;
-        position: absolute;
+        position: relative;
         content: "\e5cd";
+
     }
     .navbar .menu{
         position: fixed;
